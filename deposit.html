@@ -1,0 +1,57 @@
+<page-overlay>
+  <deposit-modal>
+    <h1>Deposit</h1>
+    <ul class="payment-selection">
+      <li data-payment="card" class="payment-entity selected">Card</li>
+      <li data-payment="paysafe" class="payment-entity">PaysafeCard</li>
+      <li data-payment="neteller" class="payment-entity">Neteller</li>
+    </ul>
+    <label>
+      <span>Amount</span>
+      <input type="text" placeholder="20.00" required="">
+    </label>
+            
+    <section class="provider-section card">
+      <label>
+        <span>Card number</span>
+        <input type="text" placeholder="1111 2222 3333 4444">
+        <a class="add-new-card" href="">+ Manage cards</a>
+      </label>
+      <div class="inline">
+        <label>
+          <span>Expires</span>
+          <input type="text" placeholder="04/17">
+        </label>
+        <label>
+          <span>CVV</span>
+          <input type="text" placeholder="123">
+        </label>
+      </div>
+    </section>
+    <section class="provider-section paysafe hide">
+      <label>
+        <span>PaysafeCard number</span>
+        <input type="text" placeholder="1111 2222 3333 4444">
+      </label>
+    </section>
+    <section class="provider-section neteller hide">
+      <label>
+        <span>Secure ID</span>
+        <input type="text" placeholder="123456">
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="text" placeholder="someone@something.com">
+      </label>
+    </section>
+    
+    <div class="divider">...</div>
+    
+    <label>
+      <span>Promo code</span>
+      <input type="text" placeholder="Enter promo code">
+    </label>
+    <button>Deposit</button>
+    <small>In accordance with our Responsible Gambling Policy, you can now set Deposit Limits at any time from your account section.</small>
+  </deposit-modal>
+</page-overlay>
